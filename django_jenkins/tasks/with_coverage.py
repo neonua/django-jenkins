@@ -12,8 +12,8 @@ class CoverageReporter(object):
         except ImportError:
             raise ImportError('coverage is not installed')
 
-        if coverage.__version__ < '4':
-            raise ImportError('coverage>=4 required')
+        if coverage.__version__ < '5':
+            raise ImportError('coverage>=5 required')
 
         coverage_config_file = None
         for argv in sys.argv:

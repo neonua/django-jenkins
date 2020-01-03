@@ -1,3 +1,4 @@
+
 django-jenkins
 ==============
 
@@ -16,17 +17,9 @@ Plug and play continuous integration with Django and Jenkins
 Installation
 ------------
 
-From PyPI::
+From git::
 
-    $ pip install django-jenkins
-
-Or by downloading the source and running::
-
-    $ python setup.py install
-
-Latest git version::
-
-    $ pip install -e git+git://github.com/kmmbvnr/django-jenkins.git#egg=django-jenkins
+    $ pip install -e git+git://github.com/neonua/django-jenkins.git
     $ pip install coverage
 
 Installation for Python 3::
@@ -111,9 +104,6 @@ Here is the reporters prebuild with django-jenkins
 
 .. _flake8: http://pypi.python.org/pypi/flake8
 
-
-Changelog
----------
 
 GIT Version
 ~~~~~~~~~~~~~~~~~~
