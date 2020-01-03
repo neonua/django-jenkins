@@ -44,7 +44,6 @@ class Reporter(object):
         try:
             lint.Run(args, reporter=ParseableTextReporter(output=output), do_exit=False)
         except TypeError:
-            # pylint < 2.0
             lint.Run(args, reporter=ParseableTextReporter(output=output), exit=False)
 
         output.close()
