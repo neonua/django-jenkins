@@ -6,6 +6,11 @@ try:
     from StringIO import StringIO
 except ImportError:
     from io import StringIO
+try:
+    from flake8.main.options import JobsArgument
+    jobs = JobsArgument('1')
+except ImportError:
+    jobs = '1'
 
 
 from flake8.api.legacy import get_style_guide  # Quck hack again, 3d time flake8 would be removed, if no volounters found
@@ -66,7 +71,7 @@ class Reporter(object):
 
         pep8style = get_style_guide(
             parse_argv=False,
-            jobs='1',
+            jobs=jobs,
             **pep8_options)
 
         try:
